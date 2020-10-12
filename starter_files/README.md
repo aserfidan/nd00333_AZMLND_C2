@@ -76,7 +76,7 @@ Scheduled Run status in ML studio:
 ![](images/step7/pipelinerestendfin.png)
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+video URL: https://youtu.be/6hlwj3KG84M
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
