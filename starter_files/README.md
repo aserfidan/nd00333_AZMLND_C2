@@ -8,6 +8,12 @@ This project is all about creating an optimized model from scratch by using powe
 In the first part of project I used Azure ML Studio to create and deploy model. The AutoML configuration  is pretty straightforward and actually only task type is selected as classification. After the AutoML experiment successfully run, based on the accuracy metric the best model is selected among around 100 models. The next step is to deploy. In addition to custom deployment, I enabled application insights to so that I can make use of powerful logs and I can reach azure portal for my deployed model. For example, if there is failed request I can get information about it. The other thing is swagger documentation. The most important part of this document is that it explains how to interact our model API and all of this document is prepared automatically.
 
 The second part of the project is all about doing the same things by using pipelines. Pipelines are great way to automate workflow and thanks to this project we carried out every steps in the previous part (except swagger documentation and enabling insights) by using pipelines. Also, I interacted with published pipeline through its rest endpoint by submitting HTTP post request.
+Here are the the most important pipeline configurations:
+- compute target: Standard D2 V2
+- data: bankmarket
+- experiment time out: 20
+- metric: AUC_weighted
+- (i did not enable deep learning due to time constraints and I used my own azure account)
 
 ## Architectural Diagram
 ![](images/UdacityAzureML.png)
