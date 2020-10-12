@@ -79,7 +79,7 @@ The bankmarketting dataset with AutoMl module:
 Before this step, everyting is exactly same with the previous steps. However thanks to pipeline, I can congifure setting easily. Thats is the major difference.
 Now I am gıing to interact with the published pipeline thorugh its rest Endpoint. This is the major advantage of using pipeline. Anyone can submit an HTTP post request to interact with a pipeline endpoint.
 Rest Endpoint and Status:
-![](images/step7/ppo.png)
+![](images/step7/StatusRestPoint.png)
 
 RundDetails Widget:
 ![](images/step7/Jupyter.png)
