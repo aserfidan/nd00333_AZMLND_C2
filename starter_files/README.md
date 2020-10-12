@@ -5,12 +5,15 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 
 This project is all about creating an optimized model from scratch by using powerful feature of Azure Auto ML and deploy it so that it can be used in real life scenarios. It is carried out by two different methods: using Azure ML studio and using Pipelines.
 
-In the first part of project I used Azure ML Studio. The configuration  is pretty straightforward and actually only task type is selected as classification. Other than that, all settings are left as default options. After the AutoML experiment successfully run, based on the accuracy metric the best model is selected among around 100 models. The next step is to deploy. Again it is quite easy to deploy. We just give name, write a quick description and select compute type, and that’s all! Here we do two additional things to our deployed model. First one, I enabled application insights to so that I can make use of powerful logs and I can reach azure portal for my deployed model. For example, if there is failed request I can get information about it. The other thing is swagger documentation. By using swagger, a powerful document is prepared automatically. The most important part of this document is that it explains how to interact our model API. For example, it gives a sample data point.
+In the first part of project I used Azure ML Studio to create and deploy model. The AutoML configuration  is pretty straightforward and actually only task type is selected as classification. After the AutoML experiment successfully run, based on the accuracy metric the best model is selected among around 100 models. The next step is to deploy. In addition to custom deployment, I enabled application insights to so that I can make use of powerful logs and I can reach azure portal for my deployed model. For example, if there is failed request I can get information about it. The other thing is swagger documentation. The most important part of this document is that it explains how to interact our model API and all of this document is prepared automatically.
 
-The second of the project is all about doing the same things by using pipelines. Pipelines are great way to automate workflow and thanks to this project we carried out every steps in the previous part (except swagger documentation and enabling insights) by using pipelines. Also, I interacted with published pipeline through its rest endpoint by submitting HTTP post request.
+The second part of the project is all about doing the same things by using pipelines. Pipelines are great way to automate workflow and thanks to this project we carried out every steps in the previous part (except swagger documentation and enabling insights) by using pipelines. Also, I interacted with published pipeline through its rest endpoint by submitting HTTP post request.
 
 ## Architectural Diagram
 ![](images/UdacityAzureML.png)
+
+## How to imporve this project in the future:
+Maybe we can add more data to the model, or we can add more columns. Also we can make new columns with existing ones with future engineering, not future selection. As it is discussed in the lectures, thanks to AutoML, engineers/scientist play more role in modeling process. We have to apply our domain knowledge and obtain better results. Also for this experiment, I did not want to spend too much money since I am working on my own azure account. However, I should have definitely tried at least 50 models.
 
 ## Key Steps
 
